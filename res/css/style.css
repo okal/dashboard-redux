@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.mdc-toolbar {
+    background-color: #FFE600;
+    color: #000000;
+}
+
+.mdc-toolbar__icon--menu {
+    color: #000000;
+}
