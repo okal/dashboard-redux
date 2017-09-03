@@ -8,16 +8,89 @@
             rel="stylesheet"
             href="/node_modules/material-components-web/dist/material-components-web.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/res/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body class="mdc-typography">
     <header class="mdc-toolbar">
         <div class="mdc-toolbar__row">
             <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
                 <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
-                <span class="mdc-toolbar__title">Title</span>
+                <span class="mdc-toolbar__title">Dashboard Redux</span>
             </section>
         </div>
     </header>
+    <aside class="mdc-temporary-drawer mdc-typography">
+        <nav class="mdc-temporary-drawer__drawer">
+
+            <header class="mdc-temporary-drawer__header">
+                <div class="mdc-temporary-drawer__header-content">
+                    Header content goes here
+                </div>
+            </header>
+
+            <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">dashboard</i>
+                    <span class="link-text">Dashboard</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">insert_chart</i>
+                    <span class="link-text">Portfolio</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">folder_shared</i>
+                    <span class="link-text">Insights</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">share</i>
+                    <span class="link-text">Marketing</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">group</i>
+                    <span class="link-text">Customer Experience</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">memory</i>
+                    <span class="link-text">System Health</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">content_copy</i>
+                    <span class="link-text">Documentation</span>
+                </a>
+                <div class="mdc-list-divider"></div>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">live_help</i>
+                    <span class="link-text">Help</span>
+                </a>
+                <div class="mdc-list-divider"></div>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">phone_in_talk</i>
+                    <span class="link-text">Contact Us</span>
+                </a>
+                <div class="mdc-list-divider"></div>
+            </nav>
+        </nav>
+        <footer class="mdc-temporary-drawer__footer">
+
+        </footer>
+    </aside>
+    <main>
+        <div class="mdc-card">
+            <section class="mdc-card__primary">
+                <h1 class="mdc-card__title mdc-card__title--large">Chart</h1>
+            </section>
+            <section class="mdc-card__media" id="chart-container">
+
+            </section>
+            <section class="mdc-card__actions">
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript"
+            src="/node_modules/material-components-web/dist/material-components-web.min.js">
+    </script>
+    <script type="text/javascript"
+            src="/node_modules/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="/src/script.js"></script>
 </body>
 </html>
