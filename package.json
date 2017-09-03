@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/okal/dashboard-redux#readme",
   "dependencies": {
+    "highcharts": "^5.0.14",
     "material-components-web": "^0.19.0"
   }
 }
